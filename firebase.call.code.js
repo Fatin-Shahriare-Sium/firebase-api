@@ -52,7 +52,10 @@ db.collection('post').add({
     //object what you want to push here
 })
 
-
+//5.query
+db.collection('post').where('parentId','==',folderId).where('userId','==',userx.uid).onSnapshot(snap=>{
+    snap.docs.map(sig=>sig.data())//returns what you want
+})
 
 
 
