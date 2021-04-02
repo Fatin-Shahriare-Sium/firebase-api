@@ -108,3 +108,25 @@ auth.onAuthStateChanged(user=>{
  })
 
      
+//firebase-rule
+
+
+//to get logged user data and remove log out user data from your app ,
+//you should use this rule in cloud firestore rules just copy and paste [!bang]
+
+
+// rules_version = '2';
+// service cloud.firestore {
+//   match /databases/{database}/documents {
+//     match /{document=**} {
+//       function logged(){
+//       return request.auth!=null
+//       }
+//       function checkUser(data){
+//      return request.auth.uid==data.userId
+//       }
+//       allow read:if logged() && checkUser(resource.data)
+//       allow create:if logged() && checkUser(request.resource.data)
+//     }
+//   }
+// }
