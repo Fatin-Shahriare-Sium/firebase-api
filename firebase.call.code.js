@@ -6,13 +6,14 @@ import 'firebase/storage'
 import db from '../twitter-clone/src/component/firebase'
 
 var firebaseConfig = {
-    apiKey:"AIzaSyDE0SmgQvfPjfxHE-bdlmRL9OR5kaXKTOM",
-    authDomain: "practising-38620.firebaseapp.com",
-    projectId: "practising-38620",
-    storageBucket: "practising-38620.appspot.com",
-    messagingSenderId: "1027234416587",
-    appId: "1:1027234416587:web:2f66110c7bc6675e5f584e",
-    measurementId: "G-QBM9PMBQW0"
+    apiKey:"AI..................",
+    authDomain: "practis........m",
+    projectId: "practi.....0",
+    storageBucket: "p......",
+    messagingSenderId: "10.....",
+    appId: "1:1.......",
+    measurementId: "G-QB.......0"
+    //you should keep it in .env file
   }
 
   let app=firebase.initializeApp(firebaseConfig)
